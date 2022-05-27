@@ -17,7 +17,7 @@
 /* HEADER */
 
 .header {
-    background-color: white;
+    background: rgba (255, 255, 255, .2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,6 +117,7 @@
 
 .mPhotos img:hover {
     filter: opacity(.5);
+    transition: all 1s;
 }
 
 .mPhotos p {
