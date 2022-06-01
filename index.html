@@ -11,27 +11,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
-<body id="grid">
+<body>
 
     <!-- HEADER -->
 
-    <header class="header">
-        <a href="./index.html"><img class="imgFavicon" src="./multimedia/imagenes/favicon2.jpeg"
-                alt="logo bread & bedfast"></a>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html" target="_self">HOME</a>
-                <li>
-                <li><a href="pages/rooms.html" target="_self">ROOMS</a></li>
-                <li><a href="pages/foodAndDrinks.html" target="_self">FOOD & DRINKS</a></li>
-                <li><a href="pages/otherServices.html" target="_self">OTHER SERVICES</a></li>
-                <li><a href="pages/aboutUs.html" target="_self">ABOUT US</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-around">
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="./multimedia/imagenes/favicon2.jpeg" alt="" width="95" height="38">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="./pages/rooms.html">ROOMS</a>
+                            <a class="nav-link" href="./pages/foodAndDrinks.html">FOOD & DRINKS</a>
+                            <a class="nav-link" href="./pages/otherServices.html">OTHER SERVICES</a>
+                            <a class="nav-link" href="./pages/aboutUs.html">ABOUT US</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <!-- IMAGEN de INICIO -->
@@ -47,14 +60,9 @@
         <!-- SECTION 2 TEXTO -->
 
         <section class="texto1">
-            <p class="pTexto1 animate__animated animate__fadeInUp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, ratione quas rerum
-                molestiae vero quae ipsa! Voluptate, inventore eum. Quo recusandae inventore molestiae eius illum,
-                beatae voluptas natus ipsa illo?
-                Sunt qui, architecto accusamus sint facilis modi in similique distinctio amet necessitatibus, enim
-                beatae, voluptas et natus non? Odio tempore sint hic, suscipit expedita ratione ut nemo quam amet
-                perspiciatis?
+            <p class="pTexto1 animate__animated animate__fadeInUp">Whether you come in to visit or just to rest, when you enter our B&B your dreams will come true.
             </p>
-            <p class="pTextoII">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur consequuntur,
+            <p class="pTextoII animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur consequuntur,
                 assumenda .</p>
         </section>
 
@@ -68,10 +76,7 @@
                             alt="bedroom-interior"></a>
                 </div>
                 <div class="m2">
-                    <p class="m2I">Food Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusamus odio,
-                        nobis
-                        reiciendis
-                        quidem nisi a!!</p>
+                    <p class="m2I">Other Services Simplemente ofrecemos lo que los clientes desean...</p>
                     <p class="m2II">Rooms</p>
                 </div>
                 <div class="m3">
@@ -80,22 +85,16 @@
                             alt="silver-modern-cutlery-on-stone-background-closeup"></a>
                 </div>
                 <div class="m4">
-                    <p class="m4I">Rooms Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusamus odio,
-                        nobis
-                        reiciendis
-                        quidem nisi a!!</p>
+                    <p class="m4I">Rooms La felicidad consiste en dormir lo sufiente. Solo eso, nada mas...</p>
                     <p class="m4II">Food & Drinks</p>
                 </div>
-                <div class="m5">
+                <div class="m5">    
                     <a href="./pages/otherServices.html"><img
                             src="./multimedia/imagenes/perro-durmiendo-cama-libro_23-2148917233.jpg"
                             alt="perro-durmiendo-cama-libro"></a>
                 </div>
                 <div class="m6">
-                    <p class="m6I">Other Services Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                        accusamus
-                        odio, nobis
-                        reiciendis quidem nisi a!!</p>
+                    <p class="m6I">Uno no puede pensar bien, amar bien, dormir bien, si no ha comido bien...</p>
                     <p class="m6II">Other Services</p>
                 </div>
                 <div class="m7">
@@ -112,12 +111,7 @@
         <!-- SECTION 4 -->
 
         <section class="texto2">
-            <p class="pTexto2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, ratione quas rerum
-                molestiae vero quae ipsa! Voluptate, inventore eum. Quo recusandae inventore molestiae eius illum,
-                beatae voluptas natus ipsa illo?
-                Sunt qui, architecto accusamus sint facilis modi in similique distinctio amet necessitatibus, enim
-                beatae, voluptas et natus non? Odio tempore sint hic, suscipit expedita ratione ut nemo quam amet
-                perspiciatis?
+            <p class="pTexto2 animate__animated animate__fadeInUp">It's quite simple. If you are a friend, you speak the password, and the door will open. Refer a friend.
             </p>
         </section>
 
@@ -213,6 +207,10 @@
             </div>
         </section>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

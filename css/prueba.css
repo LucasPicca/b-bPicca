@@ -161,6 +161,7 @@
     grid-template-areas: 
         "cont1  cont4"
         "cont2  cont4"
+        "cont3  cont4"
 }
 
 .cont1 {
@@ -458,10 +459,10 @@
         display: none;
     }
     .inicio {
-        height: 19vh;
+        height: 12vh;
     }
     .inicioDiv {
-        height: 14vh;
+        height: 10vh;
         display: flex;
         align-content: center;
         justify-content: end;
