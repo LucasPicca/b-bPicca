@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bread & Bedfast</title>
     <link rel="stylesheet" href="./css/prueba.css">
-    <link rel="shortcut icon" href="./multimedia/imagenes/favicon1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagenes/favicon1.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
@@ -15,31 +15,44 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- HEADER -->
 
-    <header>
+    <header id="header">
         <div class="container-fluid">
             <div class="d-flex justify-content-around">
-                <nav class="navbar navbar-expand-lg bg-light">
-                    <a class="navbar-brand" href="#">
-                        <img src="./multimedia/imagenes/favicon2.jpeg" alt="" width="95" height="38">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./multimedia/imagenes/favicon2.jpeg" alt="logo" width="95" height="38">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link" href="./pages/rooms.html">ROOMS</a>
-                            <a class="nav-link" href="./pages/foodAndDrinks.html">FOOD & DRINKS</a>
-                            <a class="nav-link" href="./pages/otherServices.html">OTHER SERVICES</a>
-                            <a class="nav-link" href="./pages/aboutUs.html">ABOUT US</a>
+                    <div class="container">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a href="index.html" class="nav-link">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./pages/rooms.html" class="nav-link">ROOMS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./pages/foodAndDrinks.html" class="nav-link">FOOD & DRINKS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./pages/otherServices.html" class="nav-link">OTHER SERVICES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./pages/aboutUs.html" class="nav-link">ABOUT US</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </nav>
@@ -48,70 +61,56 @@
     </header>
 
     <!-- IMAGEN de INICIO -->
-    <main class="main">
-        <section class="inicio">
-            <div class="inicioDiv">
-                <a class="bookButton" target="_self" href="">Book now</a>
-                <h1 class="inicioWhite">BREAD & BEDFAST</h1>
-            </div>
-            <a name="#top"></a>
-        </section>
 
-        <!-- SECTION 2 TEXTO -->
-
-        <section class="texto1">
-            <p class="pTexto1 animate__animated animate__fadeInUp">Whether you come in to visit or just to rest, when you enter our B&B your dreams will come true.
-            </p>
-            <p class="pTextoII animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur consequuntur,
-                assumenda .</p>
-        </section>
-
-        <!-- SECTION MENU del MAIN -->
-
-        <section class="mPhotos">
-            <div class="photosContainer">
-                <div class="m1">
-                    <a href="./pages/rooms.html"><img
-                            src="./multimedia/imagenes/bedroom-interior-in-farmhouse-style-concrete-wall-mockup-3d-rendering.jpg"
-                            alt="bedroom-interior"></a>
-                </div>
-                <div class="m2">
-                    <p class="m2I">Other Services Simplemente ofrecemos lo que los clientes desean...</p>
-                    <p class="m2II">Rooms</p>
-                </div>
-                <div class="m3">
-                    <a href="./pages/foodAndDrinks.html"><img
-                            src="./multimedia/imagenes/silver-modern-cutlery-on-stone-background-closeup.jpg"
-                            alt="silver-modern-cutlery-on-stone-background-closeup"></a>
-                </div>
-                <div class="m4">
-                    <p class="m4I">Rooms La felicidad consiste en dormir lo sufiente. Solo eso, nada mas...</p>
-                    <p class="m4II">Food & Drinks</p>
-                </div>
-                <div class="m5">    
-                    <a href="./pages/otherServices.html"><img
-                            src="./multimedia/imagenes/perro-durmiendo-cama-libro_23-2148917233.jpg"
-                            alt="perro-durmiendo-cama-libro"></a>
-                </div>
-                <div class="m6">
-                    <p class="m6I">Uno no puede pensar bien, amar bien, dormir bien, si no ha comido bien...</p>
-                    <p class="m6II">Other Services</p>
-                </div>
-                <div class="m7">
-                    <a href="./pages/aboutUs.html"><img class="m7I"
-                            src="https://img.freepik.com/foto-gratis/bloque-cubo-madera-concepto-servicio-al-cliente-contacto-comercial-que-imprime-direccion-correo-electronico-mensaje-telefono-carta-pantalla_616485-45.jpg?t=st=1653235160~exp=1653235760~hmac=478051311377fda53af035e545e596590cfb61bd014a657a69236b64e716f93f&w=1800"
-                            alt="contacto"></a>
-                </div>
-                <div class="m7II">
-                    <p>About Us</p>
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a class="bookNow" href="#">Book Now</a>
+                    <h2>Bread & Bedfast</h2>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2 TEXTO -->
+
+    <section class="texto1">
+        <p class="pTexto1 animate__animated animate__fadeInUp">Whether you come in to visit or just to rest, when you
+            enter our B&B your dreams will come true.
+        </p>
+        <p class="pTextoII animate__animated animate__fadeInUp">Whether you come in to visit or just to rest, when you
+            enter our B&B your dreams will come true.</p>
+    </section>
+
+    <!-- SECTION MENU del MAIN -->
+    <main>
+        <section class="menu">
+            <section class="mCard" data-aos="fade-up-right">
+                <img src="./multimedia/imagenes/bedroom-interior-in-farmhouse-style-concrete-wall-mockup-3d-rendering.jpg" alt="bedroom-interior">
+                <div>
+                    <p>Rooms La felicidad consiste en dormir lo sufiente. Solo eso, nada mas...</p>
+                </div>
+            </section>
+            <section class="mCard" data-aos="fade-up-left">
+                <img src="./multimedia/imagenes/silver-modern-cutlery-on-stone-background-closeup.jpg" alt="silver-modern-cutlery">
+                <div>
+                    <p>Uno no puede pensar bien, amar bien, dormir bien, si no ha comido bien...</p>
+                </div>
+            </section>
+            <section class="mCard" data-aos="fade-up-right">
+                <img src="./multimedia/imagenes/perro-durmiendo-cama-libro_23-2148917233.jpg" alt="perro-durmiendo-cama">
+                <div data-aos="fade-up-right">
+                    <p>Other Services Simplemente ofrecemos lo que los clientes desean...</p>
+                </div>
+            </section>
         </section>
 
-        <!-- SECTION 4 -->
+        <!-- SECTION 4 TEXTO  -->
 
         <section class="texto2">
-            <p class="pTexto2 animate__animated animate__fadeInUp">It's quite simple. If you are a friend, you speak the password, and the door will open. Refer a friend.
+            <p class="pTexto2 animate__animated animate__fadeInUp">It's quite simple. If you are a friend, you speak the
+                password, and the door will open. Refer a friend.
             </p>
         </section>
 
@@ -166,6 +165,8 @@
             <a class="top" href="#top">Top</a>
         </section>
     </main>
+    
+    
 
     <!-- FOOTER -->
 
@@ -207,10 +208,18 @@
             </div>
         </section>
     </footer>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000
+        });
+    </script>
 </body>
 
 </html>
