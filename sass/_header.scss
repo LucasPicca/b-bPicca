@@ -19,7 +19,7 @@
             .navbar-link {
                 letter-spacing: 4px;
                 font-weight: 700;
-                color: $colorFont;
+                color: map-get($colorGral, font);
                 cursor: pointer;
                 position: relative;
                 border: none;

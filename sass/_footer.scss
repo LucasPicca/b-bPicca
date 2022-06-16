@@ -3,10 +3,10 @@
 .footer {
     width: 100%;
     .footer2 {
-        background-image: $colorPrincipal;
+        background-image: map-get($colorGral, bg);
         display: grid;
         grid-template-columns: 1fr 1fr;
-        color: $colorFont;
+        color: map-get($colorGral, font);
         .pFooter {
             display: flex;
             flex-direction: row;

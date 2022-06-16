@@ -1,11 +1,17 @@
 /* MAP */
-/* $color: (
-    bg:linear-gradient(to right, #051937, #101d35, #192033, #202430, #26282e),
-    font: #fff,
-    contacto: linear-gradient(to right bottom, #ffffff, #f8f8f9, #f2f2f4, #ebebee, #e4e5e9, #dfe0e4, #dbdce0, #d6d7db, #d2d3d6, #ceced0, #cacacb, #c6c6c6),
-    font2: #000,
+/* EXTEND */
+/* .bookNow {
+    color: map-get($colorGral, font);
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px #000000;
+}
 
-);  */
+.bookNow--h1 {
+    @extend .bookNow;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #000000;
+}  */
 * {
   margin: 0%;
   padding: 0%;
@@ -125,18 +131,22 @@
           justify-content: end;
   text-align: center;
   background-repeat: no-repeat;
+  /*     h1 {
+        font-size: 4rem;
+        color: map-get($colorGral, font);
+        font-weight: bold;
+        text-shadow: 1px 1px 3px #000000;
+    } */
 }
 
-.main .bookNow {
+.main .bookNow, .main .bookNow--h1 {
   color: #fff;
   text-decoration: none;
   font-size: 1.5rem;
   text-shadow: 1px 1px 3px #000000;
 }
 
-.main h1 {
-  font-size: 4rem;
-  color: #fff;
+.main .bookNow--h1 {
   font-weight: bold;
   text-shadow: 1px 1px 3px #000000;
 }
@@ -157,6 +167,13 @@
 
 .texto1 .pTexto2 {
   display: none;
+}
+
+.mixin2 {
+  margin: 10px;
+  padding: 20px;
+  color: red;
+  background-color: yellow;
 }
 
 /* SECTION 3 TEXTO II */
@@ -356,7 +373,7 @@
 
 .bgRoom h2 {
   font-size: 3rem;
-  color: #fff;
+  color: #fff t;
   font-weight: bold;
 }
 

@@ -12,24 +12,29 @@
     text-align: center;
     background-repeat: no-repeat;
     .bookNow {
-        color: #fff;
+        color: map-get($colorGral, font);
         text-decoration: none;
         font-size: 1.5rem;
         text-shadow: 1px 1px 3px #000000;
 
     }
-    h1 {
-        font-size: 4rem;
-        color: #fff;
+    .bookNow--h1 {
+        @extend .bookNow;
         font-weight: bold;
         text-shadow: 1px 1px 3px #000000;
     }
+/*     h1 {
+        font-size: 4rem;
+        color: map-get($colorGral, font);
+        font-weight: bold;
+        text-shadow: 1px 1px 3px #000000;
+    } */
 }
 /* SECTION 2 TEXTO */
 
 .texto1 {
-    background-image: linear-gradient(to right, #051937, #101d35, #192033, #202430, #26282e);;
-    color: #fff;
+    background-image: map-get($colorGral, bg);
+    color: map-get($colorGral, font);
     padding: 57px 126px;
     margin: 0;
     text-align: center;
@@ -41,6 +46,16 @@
     }
 }
 
+@mixin mixin1  {
+    margin: 10px;
+    padding: 20px;
+    color: red;
+}
+
+.mixin2 {
+    @include mixin1;
+    background-color: yellow;
+}
 
 /* SECTION 3 TEXTO II */
 
@@ -98,8 +113,8 @@
 /* SECTION 5 TEXTO */
 
 .texto3 {
-    background-image: linear-gradient(to right, #051937, #101d35, #192033, #202430, #26282e);;
-    color: #fff;
+    background-image: map-get($colorGral, bg);
+    color: map-get($colorGral, font);
     padding: 30px;
     margin: 0;
     display: flex;
@@ -113,7 +128,7 @@
 
 /* SECTION CONTACTO */
 .contact {
-    background-image: linear-gradient(to right bottom, #ffffff, #f8f8f9, #f2f2f4, #ebebee, #e4e5e9, #dfe0e4, #dbdce0, #d6d7db, #d2d3d6, #ceced0, #cacacb, #c6c6c6);
+    background-image: map-get($colorGral, contacto);
     .hContact {
         padding: 2rem;
         display: flex;
@@ -153,7 +168,7 @@
         .top {
             margin: 50px;
             text-decoration: none;
-            color: #000;
+            color: map-get($colorGral, font2);
         }
     }
 }

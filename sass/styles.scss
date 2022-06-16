@@ -3,13 +3,6 @@
 @import "footer";
 @import "index";
 
-$color: (
-    bg:linear-gradient(to right, #051937, #101d35, #192033, #202430, #26282e),
-    font: #fff,
-    contacto: linear-gradient(to right bottom, #ffffff, #f8f8f9, #f2f2f4, #ebebee, #e4e5e9, #dfe0e4, #dbdce0, #d6d7db, #d2d3d6, #ceced0, #cacacb, #c6c6c6),
-    font2: #000,
-
-); 
 
 /* ROOMS */
 /* SECTION 1 */
@@ -25,7 +18,7 @@ $color: (
     background-repeat: no-repeat;
     h2 {
         font-size: 3rem;
-        color: $colorFont;
+        color: map-get($colorGral, font)t;
         font-weight: bold;
     }
 }
@@ -194,7 +187,7 @@ $color: (
 }
 @media screen and (max-width: 480px) {
     .navbar-nav {
-        background-color: $colorFont;
+        background-color: map-get($colorGral, font);
         & a {
             color: #262626;
             text-decoration: none;
