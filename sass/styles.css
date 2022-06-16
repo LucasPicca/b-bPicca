@@ -1,17 +1,5 @@
 /* MAP */
-/* EXTEND */
-/* .bookNow {
-    color: map-get($colorGral, font);
-    text-decoration: none;
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 3px #000000;
-}
-
-.bookNow--h1 {
-    @extend .bookNow;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px #000000;
-}  */
+/* MIXIN */
 * {
   margin: 0%;
   padding: 0%;
@@ -113,40 +101,39 @@
 }
 
 /* IMAGEN de INICIO */
-.main {
+.flex--main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   background: url(https://images.pexels.com/photos/3768095/pexels-photo-3768095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   height: 100vh;
   background-size: 100%;
   background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  text-align: center;
   background-repeat: no-repeat;
-  /*     h1 {
-        font-size: 4rem;
-        color: map-get($colorGral, font);
-        font-weight: bold;
-        text-shadow: 1px 1px 3px #000000;
-    } */
 }
 
-.main .bookNow, .main .bookNow--h1 {
+.flex--main .bookNow {
   color: #fff;
   text-decoration: none;
   font-size: 1.5rem;
   text-shadow: 1px 1px 3px #000000;
 }
 
-.main .bookNow--h1 {
+.flex--main h1 {
+  font-size: 4rem;
+  color: #fff;
   font-weight: bold;
   text-shadow: 1px 1px 3px #000000;
 }
@@ -167,13 +154,6 @@
 
 .texto1 .pTexto2 {
   display: none;
-}
-
-.mixin2 {
-  margin: 10px;
-  padding: 20px;
-  color: red;
-  background-color: yellow;
 }
 
 /* SECTION 3 TEXTO II */
@@ -230,12 +210,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .menu .mCard:nth-child(even) img {
@@ -246,20 +226,20 @@
 
 /* SECTION 5 TEXTO */
 .texto3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: -webkit-gradient(linear, left top, right top, from(#051937), color-stop(#101d35), color-stop(#192033), color-stop(#202430), to(#26282e));
   background-image: linear-gradient(to right, #051937, #101d35, #192033, #202430, #26282e);
   color: #fff;
   padding: 30px;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .texto3 .pTexto3 {
@@ -312,19 +292,19 @@
 }
 
 .contact .ctat .cont4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 2;
   grid-area: cont4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .contact .ctat .cont4 .form {
@@ -371,10 +351,11 @@
   background-repeat: no-repeat;
 }
 
-.bgRoom h2 {
-  font-size: 3rem;
-  color: #fff t;
+.bgRoom h1 {
+  font-size: 4rem;
+  color: #fff;
   font-weight: bold;
+  text-shadow: 1px 1px 3px #000000;
 }
 
 /* SECTION 2 */
@@ -420,6 +401,60 @@
 
 /* FOOD & DRINKS */
 /* SECTION 1 */
+.foodmain {
+  background: url(../multimedia/imagenes/cafeteria.jpg);
+  height: 100vh;
+  background-size: 100%;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.foodmain h1 {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #000000;
+}
+
+.fTextoI {
+  padding: 57px 126px;
+  margin: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.fTextoI:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  left: 25%;
+  border-top: 1px solid  #404040;
+}
+
+.fTextoI::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 80%;
+  left: 10%;
+  border-bottom: 1px solid #404040;
+}
+
 .picFood {
   height: 50%;
 }

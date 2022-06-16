@@ -1,35 +1,28 @@
 /* IMAGEN de INICIO */
 
-.main {
+.flex--main {
+    @include flex (end,center);
     position: relative;
     background: url(https://images.pexels.com/photos/3768095/pexels-photo-3768095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     height: 100vh;
     background-size: 100%;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
     text-align: center;
+    flex-direction: column;
     background-repeat: no-repeat;
     .bookNow {
         color: map-get($colorGral, font);
         text-decoration: none;
         font-size: 1.5rem;
         text-shadow: 1px 1px 3px #000000;
-
     }
-    .bookNow--h1 {
-        @extend .bookNow;
-        font-weight: bold;
-        text-shadow: 1px 1px 3px #000000;
-    }
-/*     h1 {
+    h1 {
         font-size: 4rem;
         color: map-get($colorGral, font);
         font-weight: bold;
         text-shadow: 1px 1px 3px #000000;
-    } */
-}
+    }
+}    
 /* SECTION 2 TEXTO */
 
 .texto1 {
@@ -45,18 +38,6 @@
         display: none;
     }
 }
-
-@mixin mixin1  {
-    margin: 10px;
-    padding: 20px;
-    color: red;
-}
-
-.mixin2 {
-    @include mixin1;
-    background-color: yellow;
-}
-
 /* SECTION 3 TEXTO II */
 
 .textoII {
@@ -101,9 +82,7 @@
             width: 100%;
         }
         div {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex (end,center);
         }
     }
     .mCard:nth-child(even) img {
@@ -113,13 +92,11 @@
 /* SECTION 5 TEXTO */
 
 .texto3 {
+    @include flex (center,center);
     background-image: map-get($colorGral, bg);
     color: map-get($colorGral, font);
     padding: 30px;
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     .pTexto3 {
         padding: 40px;
         font-size: 1.2rem;
@@ -153,10 +130,8 @@
             grid-area: cont3;
         }
         .cont4 {
+            @include flex (center,center);
             grid-area: cont4;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             .form {
                 display: flex;
                 flex-direction: column;

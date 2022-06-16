@@ -5,20 +5,12 @@ $colorGral: (
     font: #fff,
     contacto: linear-gradient(to right bottom, #ffffff, #f8f8f9, #f2f2f4, #ebebee, #e4e5e9, #dfe0e4, #dbdce0, #d6d7db, #d2d3d6, #ceced0, #cacacb, #c6c6c6),
     font2: #000,
-
 );  
 
-/* EXTEND */
-
-/* .bookNow {
-    color: map-get($colorGral, font);
-    text-decoration: none;
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 3px #000000;
+/* MIXIN */
+@mixin flex ($jc, $aIt){
+    display: flex;
+    justify-content: $jc;
+    align-items: $aIt;
 }
 
-.bookNow--h1 {
-    @extend .bookNow;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px #000000;
-}  */

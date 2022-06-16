@@ -1,0 +1,96 @@
+/* FOOD & DRINKS */
+
+/* SECTION 1 */
+.foodmain {
+
+    background: url(../multimedia/imagenes/cafeteria.jpg);
+    height: 100vh;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    background-repeat: no-repeat;
+    h1 {
+        font-size: 4rem;
+        color: map-get($colorGral, font);
+        font-weight: bold;
+        text-shadow: 1px 1px 3px #000000;
+    }
+}       
+.fTextoI {
+    padding: 57px 126px;
+    margin: 80px;
+    text-align: center;
+    position: relative;
+}
+.fTextoI:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    left: 25%;
+    border-top: 1px solid  #404040;
+}
+.fTextoI::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 80%; 
+    left: 10%;
+    border-bottom:1px solid #404040;
+}
+.picFood {
+    height: 50%;
+    .food1 {
+        width: 100%;
+    }
+    .food1Txt {
+        width: 50%;
+        padding: 5px;
+        display: flex;
+        text-align: center;
+    }
+}
+/* SECTION OPCIONES */
+.foodB {
+    height: 100%;
+    background-image: linear-gradient(to left top, #404040, #666666, #8e8e8e, #b9b9b9, #e6e6e6);
+    .bakery1 {
+        height: 260px;
+        width: 340px;
+        margin: 40px;
+    }
+    .bakery1Txt {
+        width: 497px;
+        height: 56px;
+        margin: 19px 29px;
+        padding: 20px 10px;
+    }
+    .rest1 {
+        height: 260px;
+        width: 340px;
+        margin: 40px;
+    }
+    .rest1Txt {
+        width: 497px;
+        height: 56px;
+        margin: 19px 29px;
+        padding: 20px 10px;
+    }
+    .drinks1 {
+        height: 260px;
+        width: 340px;
+        margin: 40px;
+    }
+    .drinks1Txt {
+        width: 497px;
+        height: 56px;
+        margin: 19px 29px;
+        padding: 20px 10px;
+    }
+}
