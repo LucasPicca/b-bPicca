@@ -1,4 +1,8 @@
 /* MAP */
+/* $fontsBg: (
+    h1: 4rem,
+    p: 
+) */
 /* MIXIN */
 * {
   margin: 0%;
@@ -356,6 +360,75 @@
   color: #fff;
   font-weight: bold;
   text-shadow: 1px 1px 3px #000000;
+  -webkit-animation: tracking-in-contract 0.9s linear both;
+  animation: tracking-in-contract 0.9s linear both;
+}
+
+.bgRoom .get {
+  -webkit-animation: tracking-in-expand-fwd-top 1s both;
+  animation: tracking-in-expand-fwd-top 1s both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+    transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+    transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
 }
 
 /* SECTION 2 */
@@ -402,7 +475,7 @@
 /* FOOD & DRINKS */
 /* SECTION 1 */
 .foodmain {
-  background: url(../multimedia/imagenes/cafeteria.jpg);
+  background: url(https://res.cloudinary.com/plucas4/image/upload/v1655507728/fdrinks_sli9ci.jpg);
   height: 100vh;
   background-size: 100%;
   background-position: center;
@@ -410,21 +483,67 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
   text-align: center;
   background-repeat: no-repeat;
+  padding: 6rem;
 }
 
 .foodmain h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   font-size: 4rem;
   color: #fff;
   font-weight: bold;
   text-shadow: 1px 1px 3px #000000;
+  -webkit-animation: tracking-in-contract 0.9s linear both;
+  animation: tracking-in-contract 0.9s linear both;
+}
+
+.foodmain p {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 3px 1px 1px #000000;
+}
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
 }
 
 .fTextoI {
@@ -432,6 +551,10 @@
   margin: 80px;
   text-align: center;
   position: relative;
+}
+
+.fTextoI p {
+  font-size: 1rem;
 }
 
 .fTextoI:before {
@@ -455,131 +578,210 @@
   border-bottom: 1px solid #404040;
 }
 
-.picFood {
-  height: 50%;
+.fTextoII {
+  text-align: center;
+  margin: 4rem;
+  padding: 1rem;
+  position: relative;
 }
 
-.picFood .food1 {
-  width: 100%;
+.fTextoII p {
+  font-size: 1.6rem;
 }
 
-.picFood .food1Txt {
-  width: 50%;
-  padding: 5px;
+.fTextoII:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 70px;
+  width: 200px;
+  height: 1px;
+  background: #000000;
+  z-index: -2;
+}
+
+.fTextoII:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 45%;
+  right: 70px;
+  width: 200px;
+  height: 1px;
+  background: #000000;
+  z-index: -2;
+}
+
+.bgf {
+  background: url(https://res.cloudinary.com/plucas4/image/upload/v1655527782/fdrinks2_casxg7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 110vh;
+  position: relative;
+}
+
+.bgf p {
+  text-align: justify;
+}
+
+.bgRes {
+  background: url(https://res.cloudinary.com/plucas4/image/upload/v1655527782/fdrinks2_casxg7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-/* SECTION OPCIONES */
-.foodB {
-  height: 100%;
-  background-image: -webkit-gradient(linear, right bottom, left top, from(#404040), color-stop(#666666), color-stop(#8e8e8e), color-stop(#b9b9b9), to(#e6e6e6));
-  background-image: linear-gradient(to left top, #404040, #666666, #8e8e8e, #b9b9b9, #e6e6e6);
+.bgRes button {
+  border: none;
+  padding: 0.7em 2em;
+  font-size: 1rem;
+  font-family: inherit;
+  background-blend-mode: multiply;
+  color: #fff;
+  border-radius: 9px;
+  background: linear-gradient(225deg, #181818, #2e2e2e);
+  -webkit-box-shadow: -5px 5px 10px #191919, 5px -5px 10px #292929;
+          box-shadow: -5px 5px 10px #191919, 5px -5px 10px #292929;
 }
 
-.foodB .bakery1 {
-  height: 260px;
-  width: 340px;
-  margin: 40px;
+.bgRes button:hover {
+  background: #212121;
+  -webkit-transition: background 2s ease;
+  transition: background 2s ease;
+  -webkit-box-shadow: -5px 5px 10px #191919, 5px -5px 10px #292929;
+          box-shadow: -5px 5px 10px #191919, 5px -5px 10px #292929;
 }
 
-.foodB .bakery1Txt {
-  width: 497px;
-  height: 56px;
-  margin: 19px 29px;
-  padding: 20px 10px;
+.bgRes button:active {
+  -webkit-transition: -webkit-box-shadow .1s ease;
+  transition: -webkit-box-shadow .1s ease;
+  transition: box-shadow .1s ease;
+  transition: box-shadow .1s ease, -webkit-box-shadow .1s ease;
+  border-radius: 9px;
+  background: #212121;
+  -webkit-box-shadow: inset -5px 5px 10px #191919, inset 5px -5px 10px #292929;
+          box-shadow: inset -5px 5px 10px #191919, inset 5px -5px 10px #292929;
 }
 
-.foodB .rest1 {
-  height: 260px;
-  width: 340px;
-  margin: 40px;
+.bgRes span {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  font-size: 1.4rem;
 }
 
-.foodB .rest1Txt {
-  width: 497px;
-  height: 56px;
-  margin: 19px 29px;
-  padding: 20px 10px;
-}
-
-.foodB .drinks1 {
-  height: 260px;
-  width: 340px;
-  margin: 40px;
-}
-
-.foodB .drinks1Txt {
-  width: 497px;
-  height: 56px;
-  margin: 19px 29px;
-  padding: 20px 10px;
+.bgRes button:hover span {
+  opacity: 0.4;
 }
 
 /* OTHER SERVICES */
 /* SECTION 1 */
-.inicioServs {
-  height: 40vh;
-  background-image: -webkit-gradient(linear, right bottom, left top, from(#404040), color-stop(#666666), color-stop(#8e8e8e), color-stop(#b9b9b9), to(#e6e6e6));
-  background-image: linear-gradient(to left top, #404040, #666666, #8e8e8e, #b9b9b9, #e6e6e6);
+.ots {
+  background: url(https://res.cloudinary.com/plucas4/image/upload/v1655590797/ots_dekxwq.jpg);
+  height: 100vh;
+  background-size: 100%;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   text-align: center;
+  background-repeat: no-repeat;
+  padding: 6rem;
 }
 
-.inicioServs .inServs {
-  margin: 0px 49px;
-  padding: 20px 10px;
+.ots h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #000000;
+  -webkit-animation: tracking-in-contract 0.9s linear both;
+  animation: tracking-in-contract 0.9s linear both;
 }
 
-.inicioServs .inServs h1 {
-  margin-bottom: 30px;
+.ots p {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 3px 1px 1px #000000;
 }
 
-.imgServs {
-  background-image: -webkit-gradient(linear, left top, right top, from(#f2f2f2), color-stop(#efefef), color-stop(#ececec), color-stop(#e9e9e9), to(#e6e6e6));
-  background-image: linear-gradient(to right, #f2f2f2, #efefef, #ececec, #e9e9e9, #e6e6e6);
+/* .inicioServs {
+    height: 40vh;
+    background-image: linear-gradient(to left top, #404040, #666666, #8e8e8e, #b9b9b9, #e6e6e6);
+    text-align: center;
+    .inServs {
+        margin: 0px 49px;
+        padding: 20px 10px;
+        h1 {
+            margin-bottom: 30px;
+        }
+    }
 }
 
-.imgServs .servs1 {
-  height: 260px;
-  width: 340px;
-  margin: 40px;
-}
-
-.imgServs .servs1Txt {
-  width: 497px;
-  height: 56px;
-  margin: 19px 29px;
-  padding: 20px 10px;
-}
-
-.imgServs .servs2 {
-  height: 260px;
-  width: 340px;
-  margin: 40px;
-}
-
-.imgServs .servs2Txt {
-  width: 497px;
-  height: 56px;
-  margin: 19px 29px;
-  padding: 20px 10px;
-}
-
-.imgServs .servs3 {
-  height: 260px;
-  width: 340px;
-  margin: 40px;
-}
-
-.imgServs .servs3Txt {
-  width: 497px;
-  height: 56px;
-  margin: 19px 29px;
-  padding: 20px 10px;
-}
-
+.imgServs{
+    background-image: linear-gradient(to right, #f2f2f2, #efefef, #ececec, #e9e9e9, #e6e6e6);
+    .servs1 {
+        height: 260px;
+        width: 340px;
+        margin: 40px;
+    }
+    .servs1Txt {
+        width: 497px;
+        height: 56px;
+        margin: 19px 29px;
+        padding: 20px 10px;
+    }
+    .servs2 {
+        height: 260px;
+        width: 340px;
+        margin: 40px;
+    }
+    .servs2Txt {
+        width: 497px;
+        height: 56px;
+        margin: 19px 29px;
+        padding: 20px 10px;
+    }
+    .servs3 {
+        height: 260px;
+        width: 340px;
+        margin: 40px;
+    }
+    .servs3Txt {
+        width: 497px;
+        height: 56px;
+        margin: 19px 29px;
+        padding: 20px 10px;
+    }
+} */
 /* ABOUT US */
 /* SECTION 1  */
 .inicioAbout {

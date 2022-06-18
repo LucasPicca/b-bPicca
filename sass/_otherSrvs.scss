@@ -1,7 +1,32 @@
 /* OTHER SERVICES */
 /* SECTION 1 */
-
-.inicioServs {
+.ots {
+    background: url(https://res.cloudinary.com/plucas4/image/upload/v1655590797/ots_dekxwq.jpg);
+    height: 100vh;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: end;
+    text-align: center;
+    background-repeat: no-repeat;
+    padding: 6rem;
+    h1 {
+      @include flex (center,end);
+      font-size: 4rem;
+      color: map-get($colorGral, font);
+      font-weight: bold;
+      text-shadow: 1px 1px 3px #000000;
+      -webkit-animation: tracking-in-contract 0.9s linear both;
+      animation: tracking-in-contract 0.9s linear both;
+    }
+    p {
+      color: map-get($colorGral, font );
+      font-weight: bold;
+      text-shadow: 3px 1px 1px #000000;
+    }
+}    
+/* .inicioServs {
     height: 40vh;
     background-image: linear-gradient(to left top, #404040, #666666, #8e8e8e, #b9b9b9, #e6e6e6);
     text-align: center;
@@ -49,4 +74,4 @@
         margin: 19px 29px;
         padding: 20px 10px;
     }
-}
+} */

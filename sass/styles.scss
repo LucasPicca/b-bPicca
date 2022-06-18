@@ -7,6 +7,7 @@
 @import "otherSrvs";
 @import "aboutUs";
 
+
 @media screen and (max-width: 480px) {
     .navbar-nav {
         background-color: map-get($colorGral, font);

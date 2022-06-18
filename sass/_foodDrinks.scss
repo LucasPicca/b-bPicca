@@ -2,28 +2,68 @@
 
 /* SECTION 1 */
 .foodmain {
-
-    background: url(../multimedia/imagenes/cafeteria.jpg);
+    background: url(https://res.cloudinary.com/plucas4/image/upload/v1655507728/fdrinks_sli9ci.jpg);
     height: 100vh;
     background-size: 100%;
     background-position: center;
     display: flex;
-    flex-direction: column;
+    flex-direction:column-reverse;
     justify-content: end;
     text-align: center;
     background-repeat: no-repeat;
+    padding: 6rem;
     h1 {
-        font-size: 4rem;
-        color: map-get($colorGral, font);
-        font-weight: bold;
-        text-shadow: 1px 1px 3px #000000;
+      @include flex (center,end);
+      font-size: 4rem;
+      color: map-get($colorGral, font);
+      font-weight: bold;
+      text-shadow: 1px 1px 3px #000000;
+      -webkit-animation: tracking-in-contract 0.9s linear both;
+      animation: tracking-in-contract 0.9s linear both;
     }
-}       
+    p {
+      color: map-get($colorGral, font );
+      font-weight: bold;
+      text-shadow: 3px 1px 1px #000000;
+    }
+}    
+
+@-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+
+  
 .fTextoI {
     padding: 57px 126px;
     margin: 80px;
     text-align: center;
     position: relative;
+    p {
+      font-size: 1rem;
+    }
 }
 .fTextoI:before {
     content: '';
@@ -43,54 +83,88 @@
     width: 80%; 
     left: 10%;
     border-bottom:1px solid #404040;
+} 
+.fTextoII {
+  text-align: center;
+  margin: 4rem;
+  padding: 1rem;
+  position: relative;
+  p {
+    font-size: 1.6rem;
+  }
 }
-.picFood {
-    height: 50%;
-    .food1 {
-        width: 100%;
-    }
-    .food1Txt {
-        width: 50%;
-        padding: 5px;
-        display: flex;
-        text-align: center;
-    }
+.fTextoII:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 70px;
+  width: 200px;
+  height: 1px;
+  background: #000000;
+  z-index: -2;
 }
-/* SECTION OPCIONES */
-.foodB {
-    height: 100%;
-    background-image: linear-gradient(to left top, #404040, #666666, #8e8e8e, #b9b9b9, #e6e6e6);
-    .bakery1 {
-        height: 260px;
-        width: 340px;
-        margin: 40px;
-    }
-    .bakery1Txt {
-        width: 497px;
-        height: 56px;
-        margin: 19px 29px;
-        padding: 20px 10px;
-    }
-    .rest1 {
-        height: 260px;
-        width: 340px;
-        margin: 40px;
-    }
-    .rest1Txt {
-        width: 497px;
-        height: 56px;
-        margin: 19px 29px;
-        padding: 20px 10px;
-    }
-    .drinks1 {
-        height: 260px;
-        width: 340px;
-        margin: 40px;
-    }
-    .drinks1Txt {
-        width: 497px;
-        height: 56px;
-        margin: 19px 29px;
-        padding: 20px 10px;
-    }
+.fTextoII:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top:45%;
+  right: 70px;
+  width: 200px;
+  height: 1px;
+  background: #000000;
+  z-index: -2;
+}
+.bgf {
+  background: url(https://res.cloudinary.com/plucas4/image/upload/v1655527782/fdrinks2_casxg7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 110vh;
+  position: relative;
+  p {
+    text-align: justify;
+  }
+}
+.bgRes {
+  background: url(https://res.cloudinary.com/plucas4/image/upload/v1655527782/fdrinks2_casxg7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+  position: relative;
+  @include flex (center,center);
+  button {
+    border: none;
+    padding: 0.7em 2em;
+    font-size: 1rem;
+    font-family: inherit;
+    background-blend-mode: multiply;
+    color: map-get($colorGral, font);
+    border-radius: 9px;
+    background: linear-gradient(225deg, #181818, #2e2e2e);
+    box-shadow: -5px 5px 10px #191919,
+                5px -5px 10px #292929;
+}
+  button:hover {
+    background: #212121;
+    transition: background 2s ease;
+    box-shadow: -5px 5px 10px #191919,
+                5px -5px 10px #292929;
+  }
+  button:active {
+    transition: box-shadow .1s ease;
+    border-radius: 9px;
+    background: #212121;
+    box-shadow: inset -5px 5px 10px #191919,
+                  inset 5px -5px 10px #292929;
+  }
+  span {
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+    font-size: 1.4rem;
+  }
+  button:hover span {
+  opacity: 0.4;
+  }
 }
