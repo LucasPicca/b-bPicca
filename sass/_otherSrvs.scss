@@ -1,16 +1,15 @@
 /* OTHER SERVICES */
-/* SECTION 1 */
+/* SECTION 1 */                              
 .ots {
     background: url(https://res.cloudinary.com/plucas4/image/upload/v1655590797/ots_dekxwq.jpg);
     height: 100vh;
-    background-size: 100%;
+    background-size: 100%;              /* IGUAL QUE FOOD&DRINKS HACER EXTEND */
     background-position: center;
     display: flex;
     flex-direction:column-reverse;
     justify-content: end;
     text-align: center;
     background-repeat: no-repeat;
-    padding: 6rem;
     h1 {
       @include flex (center,end);
       font-size: 4rem;
@@ -26,52 +25,115 @@
       text-shadow: 3px 1px 1px #000000;
     }
 }    
-/* .inicioServs {
-    height: 40vh;
-    background-image: linear-gradient(to left top, #404040, #666666, #8e8e8e, #b9b9b9, #e6e6e6);
-    text-align: center;
-    .inServs {
-        margin: 0px 49px;
-        padding: 20px 10px;
-        h1 {
-            margin-bottom: 30px;
+.oCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    width: 100%;
+    img {
+        width: 100%;
+        height: auto
+    }
+    div {
+        @include flex (start,center);
+        flex-direction: column;
+        margin: 4rem 0 0 8rem;
+        padding: 3rem;
+        h3{
+            font-size: 2.2rem;
+            margin: 4rem 0 4rem -3rem;
+            padding: 1.5rem;
+        }
+        p {
+            font-size: 1.5rem;
         }
     }
 }
-
-.imgServs{
-    background-image: linear-gradient(to right, #f2f2f2, #efefef, #ececec, #e9e9e9, #e6e6e6);
-    .servs1 {
-        height: 260px;
-        width: 340px;
-        margin: 40px;
+.otsText {
+    text-align: center;
+    padding: 3rem;
+    position: relative;
+    p {
+      font-size: 1.5rem;
     }
-    .servs1Txt {
-        width: 497px;
-        height: 56px;
-        margin: 19px 29px;
-        padding: 20px 10px;
+  }
+  .otsText:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 70px;
+    width: 150px;
+    height: 1px;
+    background: #000000;
+    z-index: -2;
+  }
+  .otsText:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top:45%;
+    right: 70px;
+    width: 150px;
+    height: 1px;
+    background: #000000;
+    z-index: -2;
+  }
+.petBg {
+    background-image: map-get($colorGral, bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    position: relative;
+    h3 {
+        font-size: 2.1rem;
+        margin: 0.5rem;
     }
-    .servs2 {
-        height: 260px;
-        width: 340px;
-        margin: 40px;
+    p {
+        font-size: 1.2rem;
+        margin: 1rem;
     }
-    .servs2Txt {
-        width: 497px;
-        height: 56px;
-        margin: 19px 29px;
-        padding: 20px 10px;
+}
+.acces {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    width: 100%;
+    margin-top: 10rem;
+    img {
+        width: 100%;
+        height: auto
     }
-    .servs3 {
-        height: 260px;
-        width: 340px;
-        margin: 40px;
+    div {
+        @include flex (start,center);
+        flex-direction: column;
+        margin: 4rem 0 0 3rem;
+        padding: 3rem;
+        h3{
+            font-size: 2.2rem;
+            margin: 4rem 0 4rem -3rem;
+            padding: 1.5rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
     }
-    .servs3Txt {
-        width: 497px;
-        height: 56px;
-        margin: 19px 29px;
-        padding: 20px 10px;
+}
+.care {
+    background-image: map-get($colorGral, font);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    position: relative;
+    h3 {
+        font-size: 2.1rem;
+        margin: 0.5rem;
     }
-} */
+    p {
+        font-size: 1.2rem;
+        margin: 1rem 0 0 2rem;
+    }
+}
+  
