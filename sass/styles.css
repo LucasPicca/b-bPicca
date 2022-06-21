@@ -156,10 +156,6 @@
   font-size: 1 rem;
 }
 
-.texto1 .pTexto2 {
-  display: none;
-}
-
 /* SECTION 3 TEXTO II */
 .textoII {
   padding: 57px 126px;
@@ -214,12 +210,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.menu .mCard2 {
+  display: none;
 }
 
 .menu .mCard:nth-child(even) img {
@@ -892,7 +892,7 @@
   margin: 1rem 0 0 2rem;
 }
 
-/* ABOUT US */
+/* CONTACT US */
 /* SECTION 1  */
 .cont {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#000000), color-stop(#050203), color-stop(#090405), color-stop(#0d0707), to(#110909));
@@ -1154,64 +1154,68 @@
     color: #262626;
     text-decoration: none;
   }
-  .main {
+  .flex--main {
     height: 25vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .main h2 {
+  .flex--main h1 {
     font-size: 1.5rem;
   }
-  .pTexto1 {
+  .texto1 {
     display: none;
   }
-  .pTexto2 {
-    font-size: 1rem;
-    text-align: center;
-    padding: 0;
-  }
-  .pTextoII {
-    font-size: 1rem;
-    text-align: center;
-    padding: 15px;
+  .textoII {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .mCard {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-  .ctat {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px;
   }
-  .ctat .cont4 {
+  .textoII h3 {
+    font-size: 1rem;
+  }
+  .textoII .txt {
     display: none;
+  }
+  .menu {
+    margin-left: 1.5rem;
+  }
+  .menu .mCard {
+    display: none;
+  }
+  .menu .mCard2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .pTexto3 {
+    display: none;
+  }
+  .pTexto4 {
+    text-align: center;
   }
   .bgRoom {
     height: 25vh;
@@ -1224,115 +1228,194 @@
     margin-bottom: 0;
   }
   /* FOOD & DRINKS */
-  .picFood {
-    height: 80vh;
-    width: 100%;
-  }
-  .picFood .food1Txt {
-    width: 79%;
-    height: 16vh;
-    margin: 0%;
-  }
-  .picFood .food1Txth2 {
-    display: none;
-  }
-  .picFood .food1Txtp {
-    text-align: center;
-    font-size: 20px;
-  }
-  .foodB {
+  .foodmain {
+    height: 25vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem;
+  }
+  .foodmain h1 {
+    font-size: 1.5rem;
+  }
+  .foodmain p {
+    display: none;
+  }
+  .fTextoI {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 10px;
-    height: 200vh;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .fTextoI h2 {
+    font-size: 1rem;
+  }
+  .fTextoI .fTxt {
+    display: none;
+  }
+  .bgf {
+    height: 55vh;
+  }
+  .bgf img {
     width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
   }
-  .foodB .foodB img {
-    height: 36vh;
-    width: 56%;
+  .bgf p {
+    padding: 1rem;
+    margin-right: 2rem;
   }
-  .foodB .foodB p {
-    font-size: 15px;
-    text-align: center;
-    margin: 15px;
-    width: 90%;
+  .pht {
+    display: none;
   }
-  .picBakery1, .picRest1, .picDrinks1 {
-    margin-bottom: -50px;
+  .pht2 {
+    padding: 1rem;
   }
-  .bakery1Txt, .rest1Txt, .drinks1Txt {
-    width: 83%;
+  .bgRes {
+    height: 45vh;
+  }
+  .fTextoI {
+    display: none;
   }
   /* OTHER SERVICES */
-  .inicioServs .txt1 {
-    display: none;
-  }
-  .imgServs {
+  .ots {
+    height: 25vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 10px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
-    height: 230vh;
+    padding: 1rem;
   }
-  .imgServsp {
-    font-size: 20px;
-    width: 83%;
+  .ots h1 {
+    font-size: 1.5rem;
   }
-  /* ABOUT US */
-  .inicioAbout {
-    height: 110vh;
+  .ots p {
+    display: none;
   }
-  .inicioAbout .inAbout {
-    height: 50vh;
-  }
-  .inicioAbout .picInicio {
-    height: 60vh;
-    width: 100%;
-  }
-  .ctat {
+  .oCard {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
-  .ctat .cont4 {
+  .oCard .cTec {
+    margin: 0;
+    text-align: center;
+  }
+  .oCard .cTec h3 {
+    font-size: 1.6rem;
+    margin: 1rem;
+  }
+  .oCard .cTec p {
+    font-size: 1.2rem;
+  }
+  .otsText:before, .otsText:after {
     display: none;
   }
-  .about2 {
-    height: 50vh;
+  .petBg {
+    height: 55vh;
   }
-  .about2 .picAbout2 {
-    height: 33vh;
-    width: 70%;
+  .petBg img {
+    width: 100%;
+  }
+  .acces {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .acces .acDiv {
+    margin: 0;
+    text-align: center;
+  }
+  .acces .acDiv h3 {
+    font-size: 1.6rem;
+    margin: 1rem;
+  }
+  .acces .acDiv p {
+    font-size: 1.2rem;
+  }
+  .care {
+    height: 50%;
+  }
+  /* CONTACT US */
+  .cont {
+    height: 25vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cont h1 {
+    font-size: 1.5rem;
+  }
+  .cText {
+    height: 65vh;
+    margin-bottom: 0;
+  }
+  .map {
+    display: none;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .inicioServs .txt2 {
+@media screen and (min-width: 768px) {
+  .txtII {
+    display: none;
+  }
+  .mCard2 {
+    display: none;
+  }
+  .pTexto4 {
+    display: none;
+  }
+  .fTxtII {
+    display: none;
+  }
+  .pht2 {
     display: none;
   }
 }

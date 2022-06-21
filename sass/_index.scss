@@ -34,9 +34,6 @@
     .pTexto1 {
         font-size: 1 rem;
     }
-    .pTexto2 {
-        display: none;
-    }
 }
 /* SECTION 3 TEXTO II */
 
@@ -82,8 +79,11 @@
             width: 100%;
         }
         div {
-            @include flex (end,center);
+            @include flex (start,center);
         }
+    }
+    .mCard2 {
+        display: none;
     }
     .mCard:nth-child(even) img {
         order: 2;

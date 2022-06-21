@@ -16,43 +16,44 @@
             text-decoration: none;
             }
         }
-    .main {
+    .flex--main {
         height: 25vh;
-        display: flex;
-        align-content: center;
-        justify-content: end;
-        & h2 {
+        @include flex (end, center);
+        h1 {
             font-size: 1.5rem;
         }
     }
-    .pTexto1 {
+    .texto1 {
         display: none;
     }
-    .pTexto2 {
-        font-size: 1rem;
-        text-align: center;
-        padding: 0;
-    }
-    .pTextoII {
-        font-size: 1rem;
-        text-align: center;
+    .textoII { 
+        @include flex (center, center);
+        flex-direction: column;
         padding: 15px;
-        display: flex;
-        justify-content: center;
-    }
-    .mCard {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    .ctat {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        .cont4 {
+        h3 {
+            font-size: 1rem;
+        }
+        .txt {
             display: none;
         }
+    }
+    .menu  {
+        margin-left: 1.5rem;
+        .mCard {
+            display: none;
+        }
+        .mCard2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 4rem;
+        }
+    }
+    .pTexto3 {
+        display: none;
+    }
+    .pTexto4 {
+        text-align: center;
     }
     .bgRoom {
         height: 25vh;
@@ -65,93 +66,136 @@
         }
     }
         /* FOOD & DRINKS */
-    .picFood {
-        height: 80vh;
-        width: 100%;
-        .food1Txt {
-            width: 79%;
-            height: 16vh;
-            margin: 0%;
-            &h2 {
-                display: none;
-            }
-            &p {
-                text-align: center;
-                font-size: 20px;
-            }
+    .foodmain {
+        height: 25vh;
+        @include flex (end, center);
+        padding: 1rem;
+        h1 {
+            font-size: 1.5rem;
         }
-    }
-    .foodB {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        height: 200vh;
-        width: 100%;
-        align-items: center;
-        text-align: center;
-        .foodB img {
-            height: 36vh;
-            width: 56%;
-        }
-        .foodB p {
-            font-size: 15px;
-            text-align: center;
-            margin: 15px;
-            width: 90%;
-        }
-    }
-    .picBakery1, .picRest1, .picDrinks1 {
-        margin-bottom: -50px;
-    }
-    .bakery1Txt, .rest1Txt, .drinks1Txt {
-        width:83%
-    }
-    /* OTHER SERVICES */    
-    .inicioServs .txt1 {
-        display: none;
-    }
-    .imgServs {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-        text-align: center;
-        height: 230vh;
-        &p {
-            font-size: 20px;
-            width: 83%;
-        }
-    }
-    /* ABOUT US */
-    .inicioAbout {
-        height: 110vh;
-        .inAbout {
-            height: 50vh;
-        }
-        .picInicio {
-            height: 60vh;
-            width: 100%;
-        }
-    }
-    .ctat {
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        justify-content: space-between;
-        .cont4 {
+        p {
             display: none;
         }
     }
-    .about2 {
-        height: 50vh;
-        .picAbout2 {
-            height: 33vh;
-            width: 70%;
+    .fTextoI { 
+        @include flex (center, center);
+        flex-direction: column;
+        padding: 1rem;
+        margin: 1rem;
+        h2 {
+            font-size: 1rem;
+        }
+        .fTxt {
+            display: none;
         }
     }
+    .bgf {
+        height: 55vh;
+        img {
+            width: 100%;
+        }
+        p {
+            padding: 1rem;
+            margin-right: 2rem;
+        }
+    }
+    .pht {
+        display: none;
+    }
+    .pht2 {
+        padding: 1rem;
+    }
+    .bgRes {
+        height: 45vh;
+    }
+    .fTextoI {
+        display: none;
+    }
+    /* OTHER SERVICES */    
+    .ots {
+        height: 25vh;
+        @include flex (end, center);
+        padding: 1rem;
+        h1 {
+            font-size: 1.5rem;
+        }
+        p {
+            display: none;
+        }
+    }
+    .oCard {
+        @include flex (center, center);
+        flex-direction: column;
+        .cTec {
+            margin: 0;
+            text-align: center;
+            h3 {
+                font-size: 1.6rem;
+                margin: 1rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .otsText:before,  .otsText:after {
+        display: none;
+    }
+    .petBg {
+        height: 55vh;
+        img {
+            width: 100%;
+        }
+    }
+    .acces {
+        @include flex (center, center);
+        flex-direction: column;
+        margin: 0;
+        .acDiv {
+            margin: 0;
+            text-align: center;
+            h3 {
+                font-size: 1.6rem;
+                margin: 1rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .care {
+        height: 50%;
+    }
+    /* CONTACT US */
+    .cont {
+        height: 25vh;
+        @include flex (center, center);
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+    .cText {
+        height: 65vh;
+        margin-bottom: 0;
+    }
+    .map {
+        display: none;
+    }
 }
-@media screen and (max-width: 768px) {
-    .inicioServs .txt2 {
+@media screen and (min-width: 768px) {
+    .txtII {
+        display: none;
+    }
+    .mCard2 {
+        display: none;
+    }
+    .pTexto4 {
+        display: none;
+    }
+    .fTxtII {
+        display: none;
+    }
+    .pht2 {
         display: none;
     }
 }
