@@ -12,28 +12,32 @@
     position: absolute;
     z-index: 10;
     width: 100%;
-    .navbar-nav {
-        margin-left: 40px;
-        .nav-item {
-            font-size: 0.8rem;
-            .navbar-link {
-                letter-spacing: 4px;
+    .navbar {
+        display: flex;
+        flex-wrap: nowrap;
+        .navbar-nav {
+            margin-left: 40px;
+            .nav-item {
+                font-size: 1.2rem;
                 font-weight: 700;
-                color: map-get($colorGral, font);
-                cursor: pointer;
-                position: relative;
-                border: none;
-                background: none;
-                transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-                transition-duration: 400ms;
-                transition-property: color;
+                .navbar-link {
+                    letter-spacing: 4px;
+                    color: map-get($colorGral, font);
+                    cursor: pointer;
+                    position: relative;
+                    border: none;
+                    background: none;
+                    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+                    transition-duration: 400ms;
+                    transition-property: color;
+                    }
                 }
+                &:hover {
+                    background: transparent;
+                    transition: all 0.6s ease 0s;
+                    }           
             }
-            &:hover {
-                background: transparent;
-                transition: all 0.6s ease 0s;
-                }           
-        } 
+        }     
     }
 
  
