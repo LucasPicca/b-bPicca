@@ -1,4 +1,12 @@
 @media screen and (max-width: 480px) {
+    .navbar {
+        display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+padding-top: .5rem;
+padding-bottom: .5rem;
+    }
     .navbar-nav {
         background-color: map-get($colorGral, font);
         & a {
@@ -29,10 +37,10 @@
     }
     .menu  {
         margin-left: 1.5rem;
-        .mCard {
+  /*       .mCard {
             display: none;
-        }
-        .mCard2 {
+        } */
+        .mCard {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -176,9 +184,9 @@
     .txtII {
         display: none;
     }
-    .mCard2 {
+/*     .mCard2 {
         display: none;
-    }
+    } */
     .pTexto4 {
         display: none;
     }

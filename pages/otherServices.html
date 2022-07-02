@@ -19,7 +19,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <!-- HEADER -->
     <header id="header">
         <div class="container-fluid">
@@ -68,7 +67,7 @@
         <!-- SECTION 2 -->
         <section class="oCard">
             <div class="cTec">
-                <h3>Tecnology</h3>
+                <h3 data-aos="fade-up">Tecnology</h3>
                 <p>From smart Tv and wireless charger to voice control in the whole room to make your staying more
                     comfortable</p>
             </div>
@@ -76,14 +75,15 @@
         </section>
         <!-- SECTION 3 -->
         <section class="otsText">
-            <p>People demand more from a hotel than just a comfortable bed </p>
+            <p>People demand more from a lodge than just a comfortable bed </p>
         </section>
         <!-- SECTION 4 -->
         <section class="petBg d-flex align-items-center">
             <div class="container bg-light w-75">
                 <div class="row">
                     <div class="col col-12 col-lg-8 p-2">
-                        <img class="img-fluid" src="../multimedia/imagenes/petF.jpg" alt="hombre caminando con perro" width="600">
+                        <img class="img-fluid" src="../multimedia/imagenes/petF.jpg" alt="hombre caminando con perro"
+                            width="600">
                     </div>
                     <div class="col col-12 col-lg-4 mt-5 p-1">
                         <h3>Pet Welcome</h3>
@@ -103,7 +103,7 @@
             </div>
         </section>
         <!-- SECTION 6 -->
-        <section class="care d-flex align-items-center">
+        <section class="care d-flex align-items-center mb-5">
             <div class="container bg-dark w-75">
                 <div class="row">
                     <div
@@ -113,10 +113,26 @@
                         </p>
                     </div>
                     <div class="col col-12 col-lg-8 mt-3 p-3 ">
-                        <img class="img-fluid" src="../multimedia/imagenes/enviroment.jpg" alt="persona caminando por el bosque" width="500">
+                        <img class="img-fluid" src="../multimedia/imagenes/enviroment.jpg"
+                            alt="persona caminando por el bosque" width="500">
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="top">
+            <a href="#top">
+                <span style="--i:1">B</span>
+                <span style="--i:2">a</span>
+                <span style="--i:3">c</span>
+                <span style="--i:4">k</span>
+                <span style="--i:4"></span>
+                <span style="--i:4">t</span>
+                <span style="--i:5">o</span>
+                <span style="--i:4"></span>
+                <span style="--i:6">t</span>
+                <span style="--i:7">o</span>
+                <span style="--i:8">p</span>
+            </a>
         </section>
     </main>
 
@@ -163,9 +179,16 @@
 
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+        </script>
+        <script>
+            AOS.init({
+                offset: 200,
+            duration: 700
+            });
+        </script>
     </body>
 
 </html>

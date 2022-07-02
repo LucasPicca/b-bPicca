@@ -14,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -66,7 +65,7 @@
     <main>
         <!-- SECTION 1 -->
         <section class="foodmain">
-            <h1 data-aos="fade-right">Food & Drinks</h1>
+            <h1>Food & Drinks</h1>
             <p>An unforgettable dining experience in a magical setting</p>
         </section>
         <!-- section 2 -->
@@ -90,10 +89,12 @@
                         <img class="img-fluid" src="../multimedia/imagenes/pan2.jpg" alt="canastas de pan exhibidas">
                     </div>
                     <div class="col col-lg-3 p-0">
-                        <img class="img-fluid" src="../multimedia/imagenes/pan7.jpg" alt="estanteria de bar con botellas">
+                        <img class="img-fluid" src="../multimedia/imagenes/pan7.jpg"
+                            alt="estanteria de bar con botellas">
                     </div>
                     <div class="col col-lg-3 p-0">
-                        <img class="img-fluid" src="../multimedia/imagenes/pan6.jpg" alt="postre servido en plato de madera">
+                        <img class="img-fluid" src="../multimedia/imagenes/pan6.jpg"
+                            alt="postre servido en plato de madera">
                     </div>
                 </div>
         </section>
@@ -106,9 +107,10 @@
             <div class="container bg-light w-75">
                 <div class="row">
                     <div class="col col-12 col-lg-7 p-2">
-                        <img src="../multimedia/imagenes/pan4.jpg" alt="comida con pan queso y verdura" width="500">
+                        <img data-aos="fade-right" src="../multimedia/imagenes/pan4.jpg"
+                            alt="comida con pan queso y verdura" width="500">
                     </div>
-                    <div class="col col-12 col-lg-4 m-3 p-3">
+                    <div class="col col-12 col-lg-4 m-3 p-2">
                         <p>Milva is a talented, passionate and creative baker/chef who delight his guests through
                             flavour, presentation and scent. She offers his guests an exciting dining experience that
                             places a close emphasis on the wonders of nature.</p>
@@ -121,26 +123,32 @@
             <div class="container mt-5 mb-5">
                 <div class="row">
                     <div class="col col-lg-4 mt-5">
-                        <img class="img-fluid" src="../multimedia/imagenes/cafeteria.jpg" alt="salon de restaurant">
+                        <div data-aos="fade-down">
+                            <img class="img-fluid" src="../multimedia/imagenes/cafeteria.jpg" alt="salon de restaurant">
+                        </div>
                     </div>
                     <div class="col col-lg-4 mt-5">
-                        <img class="img-fluid" src="../multimedia/imagenes/drink.jpg" alt="negroni">
+                        <div data-aos="fade-down">
+                            <img class="img-fluid" src="../multimedia/imagenes/drink.jpg" alt="negroni">
+                        </div>
                     </div>
                     <div class="col col-lg-4 mt-5">
-                        <img class="img-fluid" src="../multimedia/imagenes/pan5.jpg" alt="croissant relleno">
+                        <div data-aos="fade-down">
+                            <img class="img-fluid" src="../multimedia/imagenes/pan5.jpg" alt="croissant relleno">
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col col-lg-4 mt-2 p-4">
-                        <p>You can dine indoors or out, on our beautiful sun terrace. Together with its light, smart,
+                        <p data-aos="fade-up">You can dine indoors or out, on our beautiful sun terrace. Together with its light, smart,
                             healthful cuisine, here you will find the perfect spot to dine.</p>
                     </div>
                     <div class="col col-lg-4 mt-2 p-4">
-                        <p>Enjoy a nightcap or cigar by the big stone hearth, or perch on one of the original swivel
+                        <p data-aos="fade-up">Enjoy a nightcap or cigar by the big stone hearth, or perch on one of the original swivel
                             leather bar stools as our bartender mixes your favourite cocktail.</p>
                     </div>
                     <div class="col col-lg-4 mt-2 p-4">
-                        <p>Immersed in an atmosphere of bustling activity and gastronomic creativity, you’ll be served
+                        <p data-aos="fade-up">Immersed in an atmosphere of bustling activity and gastronomic creativity, you’ll be served
                             an exciting tasting menu by our attentive, skilled service team.</p>
                     </div>
                 </div>
@@ -175,6 +183,21 @@
             <h2>A Journey through the Flavours</h2>
             <p>Bread & Bedfast invites you for a culinary experience in an enchanting setting, at any time of the day,
                 from lunch to dinner, including tea-time, cocktails and our special sunday lunch.</p>
+            <div class="top">
+                <a href="#top">
+                    <span style="--i:1">B</span>
+                    <span style="--i:2">a</span>
+                    <span style="--i:3">c</span>
+                    <span style="--i:4">k</span>
+                    <span style="--i:4"></span>
+                    <span style="--i:4">t</span>
+                    <span style="--i:5">o</span>
+                    <span style="--i:4"></span>
+                    <span style="--i:6">t</span>
+                    <span style="--i:7">o</span>
+                    <span style="--i:8">p</span>
+                </a>
+            </div>
         </section>
         <!-- SECTION 8 -->
         <section class="bgRes">
@@ -230,7 +253,10 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            offset: 400,
+            duration: 700
+        });
     </script>
 
 </body>

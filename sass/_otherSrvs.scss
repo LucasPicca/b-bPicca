@@ -10,14 +10,14 @@
     justify-content: end;
     text-align: center;
     background-repeat: no-repeat;
+        -webkit-animation: bg-pan-bl 8s both;
+                animation: bg-pan-bl 8s both;
     h1 {
       @include flex (center,end);
       font-size: 4rem;
       color: map-get($colorGral, font);
       font-weight: bold;
       text-shadow: 1px 1px 3px #000000;
-      -webkit-animation: tracking-in-contract 0.9s linear both;
-      animation: tracking-in-contract 0.9s linear both;
     }
     p {
       color: map-get($colorGral, font );
@@ -34,7 +34,7 @@
         width: 100%;
         height: auto
     }
-    div {
+    .cTec {
         @include flex (start,center);
         flex-direction: column;
         margin: 4rem 0 0 8rem;
@@ -137,3 +137,20 @@
     }
 }
   
+
+ @-webkit-keyframes bg-pan-bl {
+    0% {
+      background-position: 100% 0%;
+    }
+    100% {
+      background-position: 0% 100%;
+    }
+  }
+  @keyframes bg-pan-bl {
+    0% {
+      background-position: 100% 0%;
+    }
+    100% {
+      background-position: 0% 100%;
+    }
+  }

@@ -27,38 +27,10 @@
       text-shadow: 3px 1px 1px #000000;
     }
 }    
-
-@-webkit-keyframes tracking-in-contract {
-    0% {
-      letter-spacing: 1em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      letter-spacing: normal;
-      opacity: 1;
-    }
-  }
-  @keyframes tracking-in-contract {
-    0% {
-      letter-spacing: 1em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      letter-spacing: normal;
-      opacity: 1;
-    }
-  }
-
   
 .fTextoI {
-    padding: 57px 126px;
-    margin: 80px;
+    padding: 3rem;
+    margin: 4rem;
     text-align: center;
     position: relative;
     p {
@@ -124,6 +96,7 @@
   position: relative;
   p {
     text-align: justify;
+    font-size: 1.2rem;
   }
 }
 .bgRes {
@@ -166,5 +139,31 @@
   }
   button:hover span {
   opacity: 0.4;
+  }
+}
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
   }
 }
