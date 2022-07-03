@@ -7,24 +7,30 @@
     background-size: 100%;
     background-position: center;
     display: flex;                        /* HACER EXTEND//MIXIN bg, etc. */
-    flex-direction:column-reverse;
+    flex-direction:column;
     justify-content: end;
-    text-align: center;
+    text-align: start;
     background-repeat: no-repeat;
-    padding: 6rem;
+    padding: 0 0 3rem 4rem;
+    -webkit-animation: bg-pan-bl 4s both;
+    animation: bg-pan-bl 4s both;
     h1 {
-      @include flex (center,end);
+      @include flex (start,end);
       font-size: 4rem;
       color: map-get($colorGral, font);
       font-weight: bold;
       text-shadow: 1px 1px 3px #000000;
-      -webkit-animation: tracking-in-contract 0.9s linear both;
-      animation: tracking-in-contract 0.9s linear both;
+      -webkit-animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
     }
     p {
       color: map-get($colorGral, font );
       font-weight: bold;
-      text-shadow: 3px 1px 1px #000000;
+      text-shadow: 2.5px 1px 1px #000000;
+      text-align: start;
+      font-size: 1.5rem;
+      margin-top: 1rem;
     }
 }    
   
@@ -139,31 +145,5 @@
   }
   button:hover span {
   opacity: 0.4;
-  }
-}
-@-webkit-keyframes tracking-in-contract {
-  0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: normal;
-    opacity: 1;
-  }
-}
-@keyframes tracking-in-contract {
-  0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: normal;
-    opacity: 1;
   }
 }

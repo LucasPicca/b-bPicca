@@ -10,8 +10,8 @@
     justify-content: end;
     text-align: center;
     background-repeat: no-repeat;
-        -webkit-animation: bg-pan-bl 8s both;
-                animation: bg-pan-bl 8s both;
+    -webkit-animation: bg-pan-bl 8s both;
+    animation: bg-pan-bl 8s both;
     h1 {
       @include flex (center,end);
       font-size: 4rem;
@@ -23,6 +23,7 @@
       color: map-get($colorGral, font );
       font-weight: bold;
       text-shadow: 3px 1px 1px #000000;
+      font-size: 1.5rem;
     }
 }    
 .oCard {
@@ -138,19 +139,3 @@
 }
   
 
- @-webkit-keyframes bg-pan-bl {
-    0% {
-      background-position: 100% 0%;
-    }
-    100% {
-      background-position: 0% 100%;
-    }
-  }
-  @keyframes bg-pan-bl {
-    0% {
-      background-position: 100% 0%;
-    }
-    100% {
-      background-position: 0% 100%;
-    }
-  }
