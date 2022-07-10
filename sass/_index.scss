@@ -1,11 +1,10 @@
 /* IMAGEN de INICIO */
-
 .flex--main {
-    @include flex (end,center);
+    @include flex (end,start);
     position: relative;
     background: url(https://images.pexels.com/photos/3768095/pexels-photo-3768095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     height: 100vh;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     text-align: center;
     flex-direction: column;
@@ -13,23 +12,20 @@
     -webkit-animation: bg-pan-bl 8s both;
     animation: bg-pan-bl 8s both;
     .bookNow {
+        font-size: map-get($fontSize, 2);
         color: map-get($colorGral, font);
         text-decoration: none;
-        font-size: 1.5rem;
         text-shadow: 1px 1px 3px #000000;
     }
     h1 {
-        font-size: 4rem;
+        @include font;
+        font-size: map-get($fontSize, 4);
         color: map-get($colorGral, font);
-        font-weight: bold;
-        text-shadow: 1px 1px 3px #000000;
-          -webkit-animation: fade-in-left 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-                  animation: fade-in-left 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        -webkit-animation: fade-in-left 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in-left 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
 }    
-
 /* SECTION 2 TEXTO */
-
 .texto1 {
     background-image: map-get($colorGral, bg);
     color: map-get($colorGral, font);
@@ -37,18 +33,17 @@
     margin: 0;
     text-align: center;
     .pTexto1 {
-        font-size: 1.5rem;
+        font-size: map-get($fontSize, 2);
     }
 }
 /* SECTION 3 TEXTO II */
-
 .textoII {
     padding: 3rem;
     margin: 5rem;
     text-align: center;
     position: relative;
     .txt {
-      font-size: 1.3rem;
+        font-size: map-get($fontSize, 3);
     }
 }
 .textoII:before {
@@ -70,9 +65,7 @@
     left: 10%;
     border-bottom:1px solid #404040;
 }
-
 /* SECTION 4 MENU del MAIN */
-
 .menu {
     width: 88%;
     padding: 0.2rem;
@@ -95,7 +88,7 @@
               font-weight: 700;
             }
             p {
-              font-size: 1.3rem;
+              font-size: map-get($fontSize, 3);
             }
         }
     }
@@ -108,7 +101,6 @@
     }    
 }
 /* SECTION 5 TEXT */
-
 .texto3 {
     @include flex (center,center);
     background-image: map-get($colorGral, bg);
@@ -116,7 +108,7 @@
     padding: 3rem;
     margin: 0;
     .pTexto3 {
-        font-size: 1.5rem;
+        font-size: map-get($fontSize, 2);
     }
 }
 /* SECTION CONTACT */
@@ -131,7 +123,7 @@
       display: inline-block;
       font-size: 1rem;
       font-weight: 700;
-      color: #000000;
+      color: map-get($colorGral, font2);
       letter-spacing: -5px;
       text-transform: uppercase;
       animation: flip 2s 2;

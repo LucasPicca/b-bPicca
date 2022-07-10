@@ -1,8 +1,4 @@
 /* MAP */
-/* $fontsBg: (
-    h1: 4rem,
-    p: 
-) */
 /* MIXIN */
 * {
   margin: 0%;
@@ -20,26 +16,13 @@
   width: 100%;
 }
 
-#header .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-
-#header .navbar .navbar-nav {
-  margin-left: 40px;
-}
-
-#header .navbar .navbar-nav .nav-item {
+#header .nav-item {
   font-size: 1.2rem;
   font-weight: 700;
 }
 
-#header .navbar .navbar-nav .nav-item .navbar-link {
+#header .nav-item .navbar-link {
   letter-spacing: 4px;
-  color: #fff;
   cursor: pointer;
   position: relative;
   border: none;
@@ -52,64 +35,24 @@
   transition-property: color;
 }
 
-#header .navbar .navbar-nav:hover {
+#header:hover {
   background: transparent;
   -webkit-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
 }
 
 /* FOOTER */
-.footer {
-  width: 100%;
-}
-
-.footer .footer2 {
+footer {
   background-image: -webkit-gradient(linear, left top, right top, from(#051937), color-stop(#101d35), color-stop(#192033), color-stop(#202430), to(#26282e));
   background-image: linear-gradient(to right, #051937, #101d35, #192033, #202430, #26282e);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  color: #fff;
 }
 
-.footer .footer2 .pFooter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+footer p {
+  margin: 0 0 1rem 0;
 }
 
-.footer .footer2 .pFooter p {
-  font-size: 20px;
-}
-
-.footer .footer2 .pFooter .font1, .footer .footer2 .pFooter .font2 {
-  margin: 10px;
-  padding: 5px;
-}
-
-.footer .footer2 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.footer .footer2 .logo .iconFb, .footer .footer2 .logo .iconInst, .footer .footer2 .logo .iconWorld {
-  padding: 10px;
+.foot {
+  background: #000;
 }
 
 /* IMAGEN de INICIO */
@@ -120,13 +63,13 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   position: relative;
   background: url(https://images.pexels.com/photos/3768095/pexels-photo-3768095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   height: 100vh;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   text-align: center;
   -webkit-box-orient: vertical;
@@ -139,17 +82,17 @@
 }
 
 .flex--main .bookNow {
+  font-size: 1.5rem;
   color: #fff;
   text-decoration: none;
-  font-size: 1.5rem;
   text-shadow: 1px 1px 3px #000000;
 }
 
 .flex--main h1 {
-  font-size: 4rem;
-  color: #fff;
   font-weight: bold;
   text-shadow: 1px 1px 3px #000000;
+  font-size: 4rem;
+  color: #fff;
   -webkit-animation: fade-in-left 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-left 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
@@ -298,7 +241,7 @@
   display: inline-block;
   font-size: 1rem;
   font-weight: 700;
-  color: #000000;
+  color: #000;
   letter-spacing: -5px;
   text-transform: uppercase;
   -webkit-animation: flip 2s 2;
@@ -313,8 +256,9 @@
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.3))), url(https://res.cloudinary.com/plucas4/image/upload/v1656787746/bgRoom1_ilxkye.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(https://res.cloudinary.com/plucas4/image/upload/v1656787746/bgRoom1_ilxkye.jpg);
   height: 100vh;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,8 +277,8 @@
 
 .bgRoom h1 {
   font-size: 4rem;
-  margin: 0 0 4rem 8rem;
   color: #fff;
+  margin: 0 0 4rem 8rem;
   font-weight: bold;
   text-shadow: 1px 1px 3px #000000;
   -webkit-animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -360,7 +304,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* HACER EXTEND//MIXIN bg, etc. */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -442,7 +385,7 @@
 }
 
 .fTextoII p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .fTextoII:before {
@@ -453,7 +396,7 @@
   left: 70px;
   width: 200px;
   height: 1px;
-  background: #000000;
+  background: #000;
   z-index: -2;
 }
 
@@ -465,7 +408,7 @@
   right: 70px;
   width: 200px;
   height: 1px;
-  background: #000000;
+  background: #000;
   z-index: -2;
 }
 
@@ -481,6 +424,37 @@
 .bgf p {
   text-align: justify;
   font-size: 1.2rem;
+}
+
+.top2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.top2 a {
+  text-decoration: none;
+}
+
+.top2 a span {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+  -webkit-animation: flip 2s 2;
+          animation: flip 2s 2;
+  -webkit-animation-delay: calc(.2s * var(--i));
+          animation-delay: calc(.2s * var(--i));
 }
 
 .bgRes {
@@ -546,11 +520,14 @@
 
 /* OTHER SERVICES */
 /* SECTION 1 */
+.navbar {
+  text-shadow: 0.5px 0.5px  #F4FAFF;
+}
+
 .ots {
   background: url(https://res.cloudinary.com/plucas4/image/upload/v1655590797/ots_dekxwq.jpg);
   height: 100vh;
   background-size: 100%;
-  /* IGUAL QUE FOOD&DRINKS HACER EXTEND */
   background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -651,7 +628,7 @@
   left: 70px;
   width: 150px;
   height: 1px;
-  background: #000000;
+  background: #000;
   z-index: -2;
 }
 
@@ -663,7 +640,7 @@
   right: 70px;
   width: 150px;
   height: 1px;
-  background: #000000;
+  background: #000;
   z-index: -2;
 }
 
@@ -745,7 +722,7 @@
 }
 
 .care p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 1rem 0 0 2rem;
 }
 
@@ -755,7 +732,6 @@
   background-image: -webkit-gradient(linear, left top, right bottom, from(#000000), color-stop(#050203), color-stop(#090405), color-stop(#0d0707), to(#110909));
   background-image: linear-gradient(to right bottom, #000000, #050203, #090405, #0d0707, #110909);
   height: 50vh;
-  /* IGUAL QUE FOOD&DRINKS HACER EXTEND */
   background-size: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -771,8 +747,6 @@
 .cont h1 {
   font-size: 4rem;
   color: #fff;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px #000000;
   -webkit-animation: tracking-in-contract 0.9s linear both;
   animation: tracking-in-contract 0.9s linear both;
   margin-top: 10%;
@@ -1004,42 +978,28 @@
 }
 
 @media screen and (max-width: 480px) {
-  .navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-  }
-  .navbar-nav {
-    background-color: #fff;
-  }
   .navbar-nav a {
-    color: #262626;
+    color: #fff;
     text-decoration: none;
+    text-shadow: 1px 1px 3px #000000;
   }
   .flex--main {
     height: 25vh;
+  }
+  .flex--main h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    font-size: 2rem;
   }
-  .flex--main h1 {
-    font-size: 1.5rem;
+  .flex--main a {
+    display: none;
   }
   .texto1 {
     display: none;
@@ -1061,18 +1021,15 @@
     padding: 15px;
   }
   .textoII h3 {
-    font-size: 1rem;
+    display: none;
   }
   .textoII .txt {
     display: none;
   }
   .menu {
-    margin-left: 1.5rem;
-    /*       .mCard {
-            display: none;
-        } */
+    margin: 0  0 0 1.5rem;
   }
-  .menu .mCard {
+  .menu .mCard2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1081,7 +1038,16 @@
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    margin-bottom: 4rem;
+  }
+  .menu .mCard2 img {
+    width: 70%;
+  }
+  .menu .mCard2 p {
+    font-size: 1rem;
+    margin: 0 1rem 4rem 1rem;
+  }
+  .menu .mCard {
+    display: none;
   }
   .pTexto3 {
     display: none;
@@ -1089,32 +1055,53 @@
   .pTexto4 {
     text-align: center;
   }
+  /* ROOMS */
   .bgRoom {
     height: 25vh;
     width: 100%;
   }
-  .rooms {
-    margin: 2rem;
-  }
-  .rooms .rooms div {
-    margin-bottom: 0;
-  }
-  /* FOOD & DRINKS */
-  .foodmain {
-    height: 25vh;
+  .bgRoom h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    font-size: 2rem;
+    margin: 0 1rem 0 0;
+  }
+  .rooms {
+    display: none;
+  }
+  .rooms2 {
+    margin: 2rem;
+  }
+  .rooms2 div {
+    margin-bottom: 0;
+  }
+  .bgRoom2 {
+    height: 15vh;
+  }
+  /* FOOD & DRINKS */
+  .foodmain {
+    height: 25vh;
     padding: 1rem;
   }
   .foodmain h1 {
-    font-size: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    font-size: 2rem;
+    margin: 0 1rem 0 0;
   }
   .foodmain p {
     display: none;
@@ -1159,7 +1146,7 @@
     padding: 1rem;
   }
   .bgRes {
-    height: 45vh;
+    height: 25vh;
   }
   .fTextoI {
     display: none;
@@ -1167,19 +1154,20 @@
   /* OTHER SERVICES */
   .ots {
     height: 25vh;
+    padding: 1rem;
+  }
+  .ots h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 1rem;
-  }
-  .ots h1 {
-    font-size: 1.5rem;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    font-size: 2rem;
+    margin: 0 1rem 0 0;
   }
   .ots p {
     display: none;
@@ -1249,24 +1237,28 @@
   .care {
     height: 50%;
   }
+  .care p {
+    margin: 0.5rem;
+  }
   /* CONTACT US */
   .cont {
     height: 25vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
   }
   .cont h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin: 0 1rem 0 0;
   }
   .cText {
-    height: 65vh;
+    height: 35vh;
     margin-bottom: 0;
   }
   .map {
@@ -1278,9 +1270,6 @@
   .txtII {
     display: none;
   }
-  /*     .mCard2 {
-        display: none;
-    } */
   .pTexto4 {
     display: none;
   }
@@ -1288,6 +1277,15 @@
     display: none;
   }
   .pht2 {
+    display: none;
+  }
+  .mCard2 {
+    display: none;
+  }
+  .rooms2 {
+    display: none;
+  }
+  .top2 {
     display: none;
   }
 }

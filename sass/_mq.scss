@@ -1,24 +1,17 @@
 @media screen and (max-width: 480px) {
-    .navbar {
-        display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: space-between;
-padding-top: .5rem;
-padding-bottom: .5rem;
-    }
-    .navbar-nav {
-        background-color: map-get($colorGral, font);
-        & a {
-            color: #262626;
+    .navbar-nav a {
+            color: map-get($colorGral, font);
             text-decoration: none;
-            }
+            text-shadow: 1px 1px 3px #000000;
         }
     .flex--main {
         height: 25vh;
-        @include flex (end, center);
         h1 {
-            font-size: 1.5rem;
+            @include flex (end, start);
+            font-size: 2rem;
+        }
+        a {
+            display: none;
         }
     }
     .texto1 {
@@ -29,22 +22,28 @@ padding-bottom: .5rem;
         flex-direction: column;
         padding: 15px;
         h3 {
-            font-size: 1rem;
+            display: none;
         }
         .txt {
             display: none;
         }
     }
     .menu  {
-        margin-left: 1.5rem;
-  /*       .mCard {
-            display: none;
-        } */
-        .mCard {
+        margin: 0  0 0 1.5rem;
+        .mCard2 {
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin-bottom: 4rem;
+        img {
+            width: 70%;
+        }
+        p {
+            font-size: 1rem;
+            margin: 0 1rem 4rem 1rem;
+        }
+        }
+        .mCard {
+            display: none;
         }
     }
     .pTexto3 {
@@ -53,23 +52,36 @@ padding-bottom: .5rem;
     .pTexto4 {
         text-align: center;
     }
+    /* ROOMS */
     .bgRoom {
         height: 25vh;
         width: 100%;
+        h1 {
+            @include flex (end, start);
+            font-size: 2rem;
+            margin: 0 1rem 0 0;
+        }
     }
     .rooms {
+        display: none;
+    }
+    .rooms2 {
         margin: 2rem;
-        .rooms div {
+        div {
             margin-bottom: 0;
         }
+    }
+    .bgRoom2 {
+        height: 15vh;
     }
         /* FOOD & DRINKS */
     .foodmain {
         height: 25vh;
-        @include flex (end, center);
         padding: 1rem;
         h1 {
-            font-size: 1.5rem;
+            @include flex (end, end);
+            font-size: 2rem;
+            margin: 0 1rem 0 0;
         }
         p {
             display: none;
@@ -104,7 +116,7 @@ padding-bottom: .5rem;
         padding: 1rem;
     }
     .bgRes {
-        height: 45vh;
+        height: 25vh;
     }
     .fTextoI {
         display: none;
@@ -112,10 +124,11 @@ padding-bottom: .5rem;
     /* OTHER SERVICES */    
     .ots {
         height: 25vh;
-        @include flex (end, center);
         padding: 1rem;
         h1 {
-            font-size: 1.5rem;
+            @include flex (end, end);
+            font-size: 2rem;
+            margin: 0 1rem 0 0;
         }
         p {
             display: none;
@@ -163,17 +176,21 @@ padding-bottom: .5rem;
     }
     .care {
         height: 50%;
+        p {
+            margin: 0.5rem;
+        }
     }
     /* CONTACT US */
     .cont {
         height: 25vh;
-        @include flex (center, center);
+        @include flex (end, end);
         h1 {
-            font-size: 1.5rem;
-        }
+            font-size: 2rem;
+            margin: 0 1rem 0 0;
+            }
     }
     .cText {
-        height: 65vh;
+        height: 35vh;
         margin-bottom: 0;
     }
     .map {
@@ -184,9 +201,6 @@ padding-bottom: .5rem;
     .txtII {
         display: none;
     }
-/*     .mCard2 {
-        display: none;
-    } */
     .pTexto4 {
         display: none;
     }
@@ -194,6 +208,15 @@ padding-bottom: .5rem;
         display: none;
     }
     .pht2 {
+        display: none;
+    }
+    .mCard2 {
+        display: none;
+    }
+    .rooms2 {
+        display: none;
+    }
+    .top2 {
         display: none;
     }
 }

@@ -1,15 +1,23 @@
-
 /* MAP */
 $colorGral: (
     bg:linear-gradient(to right, #051937, #101d35, #192033, #202430, #26282e),
     font: #fff,
     contacto: linear-gradient(to right bottom, #ffffff, #f8f8f9, #f2f2f4, #ebebee, #e4e5e9, #dfe0e4, #dbdce0, #d6d7db, #d2d3d6, #ceced0, #cacacb, #c6c6c6),
     font2: #000,
+    line: #474544,
 );  
-/* $fontsBg: (
-    h1: 4rem,
-    p: 
-) */
+$fontSize: (
+    1: 1rem,
+    2: 1.5rem,
+    3: 1.3rem, 
+    4: 4rem,
+    5: 1.6,
+    6: 1.2rem,
+    7: 2.2rem,
+    8: 2.1rem,
+    9: 1.9rem,
+    10: 2.3rem,
+); 
 
 /* MIXIN */
 @mixin flex ($jc, $aIt){
@@ -17,9 +25,11 @@ $colorGral: (
     justify-content: $jc;
     align-items: $aIt;
 }
-@mixin bg {
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-position: relative;
+@mixin font {
+font-weight: bold;
+text-shadow: 1px 1px 3px #000000;
 }
+
+
+
+

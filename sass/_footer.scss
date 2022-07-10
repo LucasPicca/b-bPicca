@@ -1,32 +1,10 @@
 /* FOOTER */
-
-.footer {
-    width: 100%;
-    .footer2 {
-        background-image: map-get($colorGral, bg);
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        color: map-get($colorGral, font);
-        .pFooter {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            & p {
-                font-size: 20px;
-            }
-            .font1, .font2 {
-                margin: 10px;
-                
-                padding: 5px;
-            }   
-        }
-        .logo {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            .iconFb, .iconInst, .iconWorld {
-                padding: 10px;
-            }
-        }
-    }
+footer {
+    background-image: map-get($colorGral, bg);
+    p {
+        margin:0 0 1rem 0;
+    }    
+}
+.foot {
+    background: #000;
 }

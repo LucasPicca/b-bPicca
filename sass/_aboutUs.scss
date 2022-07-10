@@ -1,14 +1,13 @@
 /* CONTACT US */
 /* SECTION 1  */
 .cont {
-    background-image: linear-gradient(to right bottom, #000000, #050203, #090405, #0d0707, #110909);    height: 50vh;/* IGUAL QUE FOOD&DRINKS HACER EXTEND */
+    background-image: linear-gradient(to right bottom, #000000, #050203, #090405, #0d0707, #110909);   
+    height: 50vh;
     background-size: 100%;       
     @include flex (center,center);
     h1 {
-      font-size: 4rem;
+      font-size: map-get($fontSize, 4);
       color: map-get($colorGral, font);
-      font-weight: bold;
-      text-shadow: 1px 1px 3px #000000;
       -webkit-animation: tracking-in-contract 0.9s linear both;
       animation: tracking-in-contract 0.9s linear both;
       margin-top: 10%;
@@ -19,8 +18,8 @@
     position: relative;
     margin-top: 6%;
     h2 {
-        color: #474544;
-        font-size: 1.9rem;
+        color: map-get($colorGral, line);
+        font-size: map-get($fontSize, 9);
         font-weight: 700;
         letter-spacing: 7px;
         text-align: center;
@@ -36,7 +35,7 @@
         width: 100%;
         .icon {
             display: block;
-            fill: #474544;
+            fill: map-get($colorGral, line);
             height: auto;
             margin: 0 auto;
             width: 5%;
@@ -57,8 +56,8 @@
             background: none;
             border: none;
             border-bottom: solid 2px #474544;
-            color: #474544;
-            font-size: 1rem;
+            color: map-get($colorGral, line);
+            font-size: map-get($fontSize, 1);
             font-weight: 400;
             letter-spacing: 1px;
             margin: 0 0 1rem 0;
@@ -104,18 +103,18 @@
                 width: 100%;
             }
             ::-webkit-input-placeholder {
-                color: #474544;
+                color: map-get($colorGral, line);
             }
             :-moz-placeholder { 
-                color: #474544;
+                color: map-get($colorGral, line);
                 opacity: 1;
             }
             ::-moz-placeholder {
-                color: #474544;
+                color: map-get($colorGral, line);
                 opacity: 1;
             }
             :-ms-input-placeholder {
-                color: #474544;
+                color: map-get($colorGral, line);
             }
         }
         #form_button {
@@ -124,7 +123,7 @@
             color: #474544;
             cursor: pointer;
             display: inline-block;
-            font-size: 1rem;
+            font-size: map-get($fontSize, 1);
             font-weight: bold;
             outline: none;
             padding: 1rem 2rem;
@@ -136,7 +135,7 @@
             transition: all 0.3s;
         }
         #form_button:hover {
-            background: #474544;
+            background: map-get($colorGral, line);
             color: #F2F3EB;
         }
     }
@@ -170,7 +169,7 @@
     margin: 5rem 0 15rem;
     @include flex (center,center);
     p {
-      font-size: 2.3rem;
+      font-size: map-get($fontSize, 10);
       color: map-get($colorGral, font);
       text-shadow: 1px 2px 2px #000000;
     }
